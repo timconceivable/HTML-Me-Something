@@ -1,1 +1,127 @@
-/* Write your CSS here! */
+:root {
+	--bgcolor: #dadada;
+	--textcolor: #554455;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+	padding: 0;
+    background-color: var(--bgcolor);
+	color: var(--textcolor);
+    font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
+    font-size: x-large;
+}
+
+#title {
+	color: white;
+	font-size: xx-large;
+	font-weight: 900;
+}
+
+header {
+    margin: 0 auto;
+	padding: .5rem 0;
+	position: -webkit-sticky; 
+	position: sticky;
+	/* top: 0px; ( SET BY SCRIPT ) */
+	width: 100%;
+	background-color: purple;
+	color: white;
+	font-size: xx-large;
+}
+
+nav {
+	padding: .5rem;
+	margin: 0;
+	position: -webkit-sticky; 
+	position: sticky;
+	background-color: purple;
+	font-size: large;
+}
+
+nav ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 1rem;
+	
+}
+
+nav ul li a {
+	color: rgb(201, 137, 201);
+	text-decoration: none;
+	font-weight: 600;
+	margin-top: 0;
+	padding: .5rem;
+}
+
+nav ul li a:hover {
+	font-weight: 900;
+	background-color: white;
+	border-radius: 0;
+	padding: .5rem;
+}
+
+main a {
+	text-decoration: wavy;
+}
+
+section {
+	max-width: 60rem;
+	width: 70%;
+	margin: auto;
+	padding: 1rem;
+}
+
+h1 {
+	margin: .5rem auto;
+	text-align: center;
+}
+
+img {
+	max-width: auto;
+	max-height: 20rem;
+	margin: 0 .5rem 0 0;
+	padding: 0 .5rem 0 0;
+}
+
+figcaption {
+	display: block;
+	max-width: auto;
+	margin-bottom: 1.5rem;
+	font-size: small;
+	color: purple;
+}
+
+.imgbox {
+	display: flex;
+	/* background-color: white; */
+	margin: 0;
+	padding: 0;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scrollbar-3dlight-color: var(--bgcolor);
+	scrollbar-arrow-color: white;
+	scrollbar-base-color: var(--bgcolor);
+	scrollbar-color: var(--bgcolor) var(--bgcolor);
+	scrollbar-darkshadow-color: var(--bgcolor);
+	scrollbar-face-color: var(--bgcolor);
+	scrollbar-gutter: var(--bgcolor);
+	scrollbar-highlight-color: var(--bgcolor);
+	scrollbar-shadow-color: var(--bgcolor);
+}
+
+footer {
+    max-width: 60rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	background-color: purple;
+	color: white;
+	text-align: center;
+}

@@ -33,9 +33,9 @@ body {
 header {
     margin: 0 auto;
 	padding: .5rem 0;
-	position: -webkit-sticky; 
+	position: -webkit-sticky;
 	position: sticky;
-	/* top: 0px; ( SET BY SCRIPT ) */
+	top: 0px;
 	width: 100%;
 	background-color: var(--headercolor);
 	color: white;
@@ -61,6 +61,7 @@ nav {
 	margin: 0;
 	position: -webkit-sticky; 
 	position: sticky;
+	top: 0;
 	background-color: var(--headercolor);
 	font-size: large;
 }

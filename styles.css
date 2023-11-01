@@ -97,11 +97,13 @@ nav ul li a:hover {
 }
 
 h2 {
+	margin-bottom: -.5rem;
+	margin-left: -10%;
 	width: 100%;
 	background-color: var(--titlecolor);
-	/* transform: skew(-20deg); */
+	/* transform: skew(-10deg); */
 	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
-	/* font-style: oblique;	 */
+	font-style: oblique;	
 }
 
 span {
@@ -140,7 +142,7 @@ img {
 
 figcaption {
 	display: block;
-	max-width: 80%;
+	max-width: 100%;
 	margin: .5rem 0 1.5rem 0;
 	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
 	font-size: small;

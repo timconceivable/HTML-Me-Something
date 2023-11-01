@@ -36,6 +36,7 @@ header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
+	height: min-content;
 	width: 100%;
 	background-color: var(--headercolor);
 	color: white;
@@ -62,6 +63,7 @@ nav {
 	position: -webkit-sticky; 
 	position: sticky;
 	top: 0;
+	height: min-content;
 	background-color: var(--headercolor);
 	font-size: large;
 }

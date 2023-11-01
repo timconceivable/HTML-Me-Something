@@ -1,22 +1,28 @@
 :root {
 	--bgcolor: #dadada;
 	--textcolor: #554455;
+	--headercolor: #5a2c5a;
+	--navtextcolor: rgb(201, 137, 201);
+}
+
+#mainHeading { 
+	color: red; /* i hate this */
+}
+
+.funParagraph { 
+	color: green; /* this too */
 }
 
 body {
+	display: block;
     width: 100%;
     margin: 0;
 	padding: 0;
+	overflow-x: hidden;
     background-color: var(--bgcolor);
 	color: var(--textcolor);
     font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
     font-size: x-large;
-}
-
-#title {
-	color: white;
-	font-size: xx-large;
-	font-weight: 900;
 }
 
 header {
@@ -26,9 +32,23 @@ header {
 	position: sticky;
 	/* top: 0px; ( SET BY SCRIPT ) */
 	width: 100%;
-	background-color: purple;
+	background-color: var(--headercolor);
+	color: white;
+	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
+	font-size: xx-large;
+}
+
+#title {
 	color: white;
 	font-size: xx-large;
+	font-weight: 900;
+	font-style: oblique;
+}
+
+h1 {
+	margin: .5rem auto;
+	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
+	text-align: center;
 }
 
 nav {
@@ -36,7 +56,7 @@ nav {
 	margin: 0;
 	position: -webkit-sticky; 
 	position: sticky;
-	background-color: purple;
+	background-color: var(--headercolor);
 	font-size: large;
 }
 
@@ -53,7 +73,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: rgb(201, 137, 201);
+	color: var(--navtextcolor);
 	text-decoration: none;
 	font-weight: 600;
 	margin-top: 0;
@@ -67,20 +87,31 @@ nav ul li a:hover {
 	padding: .5rem;
 }
 
-main a {
-	text-decoration: wavy;
+h2 {
+	width: 100%;
+	background-color: white;
+	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
+	font-style: oblique;
 }
 
 section {
-	max-width: 60rem;
+	max-width: 50rem;
 	width: 70%;
 	margin: auto;
-	padding: 1rem;
+	padding: .5rem;
+	font-family: 'Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1 {
-	margin: .5rem auto;
-	text-align: center;
+section a {
+	text-decoration-line: underline;
+	text-decoration: wavy;
+}
+
+span {
+	display: inline-block;
+	width: auto;
+	background-color: var(--headercolor);
+	color: var(--headercolor);
 }
 
 img {
@@ -92,10 +123,11 @@ img {
 
 figcaption {
 	display: block;
-	max-width: auto;
-	margin-bottom: 1.5rem;
+	max-width: 80%;
+	margin: .5rem 0 1.5rem 0;
+	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
 	font-size: small;
-	color: purple;
+	color: var(--headercolor);
 }
 
 .imgbox {
@@ -121,7 +153,10 @@ footer {
 	width: 100%;
 	margin: 0 auto;
 	padding: 1rem;
-	background-color: purple;
+	background-color: var(--headercolor);
 	color: white;
+	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
+	font-style: oblique;
 	text-align: center;
+
 }

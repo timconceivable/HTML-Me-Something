@@ -10,7 +10,12 @@
 }
 
 .funParagraph { 
+	margin: .5rem 0 0 15%;
 	color: green; /* this too */
+}
+
+.funParagraph img {
+	margin: 0 -.1rem -1.5rem 0;
 }
 
 body {
@@ -92,6 +97,12 @@ h2 {
 	background-color: white;
 	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
 	font-style: oblique;
+}
+
+article {
+	width: 70%;
+	margin: 0 auto;
+	padding: 0;
 }
 
 section {

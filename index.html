@@ -4,16 +4,6 @@
       <title>My Coding Journey [TimConceivable!]</title>
       <link href='./styles.css' rel='stylesheet' type="text/css" media="screen">
       <link href='https://fonts.googleapis.com/css?family=Noto' rel='stylesheet'>
-      <script>
-         function init () {
-            if (window.pageYOffset < "200px") {
-               document.querySelector("header").style.top = "0";
-            } else {
-               document.querySelector("header").style.top = "-7.15rem";
-            }
-         }
-         window.addEventListener("load", init);
-      </script>
    </head>
    <body>
       <header id="title">
@@ -94,6 +84,15 @@
          <footer>TimConceivable! &copy;2023</footer>
       </main>
       
-      
+      <script>
+         function init () {
+            if (window.pageYOffset < "200px") {
+               document.querySelector("header").style.top = "0";
+            } else {
+               document.querySelector("header").style.top = "-7.2rem";
+            }
+         }
+         window.addEventListener("load", init);
+      </script>
    </body>
 </html>

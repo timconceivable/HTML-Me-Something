@@ -1,7 +1,7 @@
 :root {
 	--bgcolor: #dadada;
 	--textcolor: #554455;
-	--headercolor: #5a2c5a;
+	--headercolor: #27556c;
 	--navtextcolor: rgb(201, 137, 201);
 	--titlecolor: #BDFF3E;
 }
@@ -22,19 +22,19 @@
 
 body {
 	display: block;
-    width: 100%;
-    margin: 0;
+	width: 100%;
+	margin: 0;
 	padding: 0;
-    background-color: var(--bgcolor);
+	background-color: var(--bgcolor);
 	background-image: url("./images/100_4079F.jpg");
 	background-size: cover;
 	color: var(--textcolor);
-    font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
-    font-size: x-large;
+	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
+	font-size: x-large;
 }
 
 header {
-    margin: 0 auto;
+   margin: 0 auto;
 	padding: .5rem 0;
 	position: -webkit-sticky;
 	position: sticky;
@@ -79,7 +79,6 @@ nav ul {
 nav ul li {
 	display: inline-block;
 	margin: 0 1rem;
-	
 }
 
 nav ul li a {
@@ -87,14 +86,14 @@ nav ul li a {
 	text-decoration: none;
 	font-weight: 600;
 	margin-top: 0;
-	padding: .5rem;
+	padding: .25rem .5rem 1rem;
 }
 
 nav ul li a:hover {
 	font-weight: 900;
-	background-color: white;
-	/* border-radius: .5rem; */
-	padding: .5rem;
+	background-color: var(--titlecolor);
+	color: var(--textcolor);
+	padding: .25rem .5rem 1rem;
 }
 
 h2 {
@@ -102,7 +101,6 @@ h2 {
 	margin-left: -10%;
 	width: 100%;
 	background-color: var(--titlecolor);
-	/* transform: skew(-10deg); */
 	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
 	font-style: oblique;	
 }
@@ -152,7 +150,6 @@ figcaption {
 
 .imgbox {
 	display: flex;
-	/* background-color: white; */
 	margin: 0;
 	padding: 0;
 	overflow-x: auto;

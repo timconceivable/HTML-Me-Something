@@ -2,22 +2,38 @@
 	--bgcolor: #dadada;
 	--textcolor: #554455;
 	--headercolor: #27556c;
-	--navtextcolor: rgb(201, 137, 201);
+	--navtextcolor: #448ccb;
 	--titlecolor: #BDFF3E;
+	--avatarsize: 32px;
 }
 
 #mainHeading { 
 	color: red; /* i hate this */
 }
 
-.funParagraph { 
-	margin: 0 0 0 1rem;
-	padding: .5rem 0 0 0;
+.funParagraph { /* so fun */
+	position: -webkit-sticky; 
+	position: sticky;
+	top: 0;
+	margin: 0;
+	padding: .5rem;
+	width: 14rem;
+	height: 1.75rem;
+	background-color: var(--navtextcolor);
+	border-radius: 0 0 1.5rem 0;
 	color: green; /* this too */
+	color: var(--titlecolor);
+	font-size: large;
 }
 
 .funParagraph img {
-	margin: 0 -.1rem -1.5rem 0;
+	float: left;
+	margin: -.5rem 1rem 0 1rem;
+	padding: 0;
+	height: var(--avatarsize);
+	width: var(--avatarsize);
+	border: 5px solid var(--titlecolor);
+	border-radius: 50%;
 }
 
 body {
@@ -98,8 +114,9 @@ nav ul li a:hover {
 
 h2 {
 	margin-bottom: -.5rem;
-	margin-left: -10%;
+	margin-left: -5%;
 	width: 100%;
+	border-radius: 0 0 1.5rem 0;
 	background-color: var(--titlecolor);
 	font-family: 'Noto', 'Open Sans', "Optima", sans-serif;
 	font-style: oblique;	
@@ -115,7 +132,8 @@ span {
 article {
 	max-width: 60rem;
 	width: 70%;
-	margin: 0 auto;
+	margin: -2.75rem auto 0;
+	/* margin: 0 auto; */
 	padding: 0;
 	background-color: var(--bgcolor);
 }
@@ -123,7 +141,7 @@ article {
 section {
 	width: 70%;
 	margin: 0 auto;
-	padding: .5rem;
+	padding: 1.5rem .5rem;
 	font-family: 'Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
